@@ -9,8 +9,11 @@
         state: present
       vars:
         packages:
+          - ansible
+          - audacity
           - autoconf
           - automake
+          - bless
           - bzip2
           - ccache
           - chrpath
@@ -32,6 +35,7 @@
           - gawk
           - gcc
           - gcc-c++
+          - gimp
           - git
           - git-email
           - git-lfs
@@ -39,8 +43,10 @@
           - glibc-devel
           - glibc-langpack-en
           - glibc-locale-source
+          - gnome-tweaks
           - gzip
           - hostname
+          - inkscape
           - jq
           - latexmk
           - libacl
@@ -57,6 +63,7 @@
           - ncdu
           - neovim
           - nmap
+          - okular
           - oxipng
           - patch
           - perl
@@ -73,6 +80,7 @@
           - postfix
           - powertop
           - pre-commit
+          - pulseview
           - python
           - python3
           - python3-GitPython
@@ -117,3 +125,19 @@
           - yt-dlp
           - zsh
           - zstd
+    - name: Add the flathub flatpak repository remote
+      community.general.flatpak_remote:
+        name: flathub
+        state: present
+        flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
+    - name: Install multiple packages
+      community.general.flatpak:
+        name:
+          - com.github.tchx84.Flatseal
+          - com.mojang.Minecraft
+          - com.vscodium.codium
+          - org.ghidra_sre.Ghidra
+          - org.godotengine.Godot3Sharp
+          - org.kicad.KiCad
+          - org.musicbrainz.Picard
+          - org.signal.Signal 
