@@ -10,26 +10,42 @@
       vars:
         packages:
           - clang
+          - clanag-analyzer
           - clang-tools-extra
           - gcc
           - git
           - git-email
           - git-lfs
           - gitk
+          - jq
+          - lshw
+          - lua
+          - luarocks
+          - lutris
           - make
           - mc
           - mutt
           - neovim
+          - nmap
+          - podman
           - postfix
+          - powertop
           - pre-commit
           - python3-neovim
           - python3-pip
           - rclone
+          - rubypick
           - shellcheck
           - shfmt
+          - sqlite
           - tio
           - tmux
+          - wireshark
+          - usbutils
           - vim
+          - vlc
+          - yq
+          - yt-dlp
           - zsh
     - name: Install packages required for Yocto
       ansible.builtin.dnf:
