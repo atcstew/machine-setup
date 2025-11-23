@@ -9,73 +9,55 @@
         state: present
       vars:
         packages:
-          - clang
-          - clanag-analyzer
-          - clang-tools-extra
-          - gcc
-          - git
-          - git-email
-          - git-lfs
-          - gitk
-          - jq
-          - lshw
-          - lua
-          - luarocks
-          - lutris
-          - make
-          - mc
-          - mutt
-          - neovim
-          - nmap
-          - podman
-          - postfix
-          - powertop
-          - pre-commit
-          - python3-neovim
-          - python3-pip
-          - rclone
-          - rubypick
-          - shellcheck
-          - shfmt
-          - sqlite
-          - tio
-          - tmux
-          - wireshark
-          - usbutils
-          - vim
-          - vlc
-          - yq
-          - yt-dlp
-          - zsh
-    - name: Install packages required for Yocto
-      ansible.builtin.dnf:
-        name: "{{ yocto_packages }}"
-        state: present
-      vars:
-        yocto_packages:
+          - autoconf
+          - automake
           - bzip2
           - ccache
           - chrpath
+          - clang
+          - clang-analyzer
+          - clang-tools-extra
+          - cmake
+          - codespell
           - cpio
           - cpp
+          - cppcheck
           - diffstat
           - diffutils
+          - dtc
           - file
           - findutils
+          - firefox
+          - fuse-sshfs
           - gawk
           - gcc
           - gcc-c++
           - git
+          - git-email
+          - git-lfs
+          - gitk
           - glibc-devel
           - glibc-langpack-en
           - glibc-locale-source
           - gzip
           - hostname
+          - jq
           - latexmk
           - libacl
           - librsvg2-tools
+          - lshw
+          - lua
+          - luarocks
+          - lutris
           - lz4
           - make
+          - mc
+          - meson
+          - mutt
+          - ncdu
+          - neovim
+          - nmap
+          - oxipng
           - patch
           - perl
           - perl-bignum
@@ -86,16 +68,29 @@
           - perl-locale
           - perl-Text-ParseWords
           - perl-Thread-Queue
+          - php-cli
+          - podman
+          - postfix
+          - powertop
+          - pre-commit
           - python
           - python3
           - python3-GitPython
           - python3-jinja2
+          - python3-neovim
           - python3-pexpect
           - python3-pip
           - python3-pyyaml
           - python3-sphinx
+          - rclone
+          - ripgrep
           - rpcgen
+          - rubypick
+          - shellcheck
+          - shfmt
           - socat
+          - sqlite
+          - strace
           - tar
           - texinfo
           - texlive-collection-fontsextra
@@ -108,8 +103,17 @@
           - texlive-gnu-freefont
           - texlive-tex-gyre
           - texlive-xetex
+          - tio
+          - tmux
           - unzip
+          - usbutils
+          - vim
+          - vlc
           - wget
           - which
+          - wireshark
           - xz
+          - yq
+          - yt-dlp
+          - zsh
           - zstd
