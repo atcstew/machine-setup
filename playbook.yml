@@ -24,6 +24,7 @@
           - pre-commit
           - python3-neovim
           - python3-pip
+          - rclone
           - shellcheck
           - shfmt
           - tio
