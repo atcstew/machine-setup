@@ -44,6 +44,7 @@
           - glibc-langpack-en
           - glibc-locale-source
           - gnome-tweaks
+          - gnuradio
           - gzip
           - hostname
           - inkscape
@@ -137,7 +138,8 @@
           - com.mojang.Minecraft
           - com.vscodium.codium
           - org.ghidra_sre.Ghidra
-          - org.godotengine.Godot3Sharp
+          - org.gnucash.GnuCash
+          - org.octave.Octave
           - org.kicad.KiCad
           - org.musicbrainz.Picard
           - org.signal.Signal 
